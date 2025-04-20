@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Montserrat FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Logo_Trường_Đại_học_FPT.svg.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrapper_general">
+        <header>
+            <div class="logo">Kingdom</div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="Home Page!">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" title="About me!">About</a>
+                    </li>
+                    <li class="wrapper_dropdown">
+                        <a href="#" title="My own project!">Project  <span><i class="fa-solid fa-arrow-up"></i></span></a>
+                        <ul class="dropdown">
+                            <a href="#">Project A</a>
+                            <a href="#">Project B</a>
+                            <a href="#">Project C</a>
+                            <a href="#">Project D</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Blog">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="contact" title="Contact me!" onclick="contact()">
+                <i class="fa-solid fa-rainbow"></i>
+            </button>
+        </header>
+        <main>
+            <div class="wrapper_main">
+                    <h1><span class="wrapper_main_span_1">I'm,</span><span class="wrapper_main_span_2">Trung Thang</span></h1>
+                    <h2 class="wrapper_main_h2_1">はじめまして！</h2>
+                    <h2 class="wrapper_main_h2_2">I'm future Full-stack developer!</h2>
+                <div class="profile">
+                </div>
+                <div class="wrapper_button"></div>
+                <button class="button button1" id="buttonM_hover">
+                    <span id="plane"><i class="fa-solid fa-plane"></i></span>
+                    <div class="cloud cloud1"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="cloud cloud2"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="cloud cloud3"><i class="fa-solid fa-cloud"></i></div>
+                    <span id="textPlane"><i class="fa-solid fa-gem"></i></span>
+                    <span id="textWelcome">Welcome</span>
+                </button>
+                <button class="button button2">Source</button>
+                <button class="button button3">Co-op</button>
+            </div>
+        </main>
+        <footer>
+        <div class="footer">
+            <div class="footer_text">© 2025 UI Beginner's. All rights reserved.</div>
+            <div class="footer_horLine"></div>
+            <div class="footer_link">
+                <div class="footer_link_container">
+                    <div class="footer_btn" title="Facebook"> <i class="fa-brands fa-facebook"></i> </div>
+                    <div class="footer_btn" title="Github"> <i class="fa-brands fa-github"></i> </div>
+                    <div class="footer_btn" title="X-Twitter"> <i class="fa-brands fa-x-twitter"></i ></div>
+                    <div class="footer_btn" title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="footer_btn" title="Instagram"> <i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <script>
+            const Plane = document.getElementById("plane");
+            const TextWelcome = document.getElementById("textWelcome");
+            const isHover = document.getElementById("buttonM_hover");
+            Plane.addEventListener("animationend", () => {
+                TextWelcome.classList.add("appeared");
+            });
+            isHover.addEventListener("mouseout",() => {
+                TextWelcome.classList.remove("appeared");
+            });
+        </script>
+    </div>
+</body>
+</html>
