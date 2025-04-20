@@ -10,7 +10,7 @@ body, html{
 .wrapper_general {
     width: 100%;
     min-height: 110vh;
-    background-image: url(../img/city-7359472_1920.jpg);
+    background-image: url(city-7359472_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -272,7 +272,7 @@ main {
     width: 100%;
 }
 .profile {
-    background-image: url(../img/1000002006-Photoroom.png);
+    background-image: url(Erisdesu.png);
     background-repeat: no-repeat;
     border:none;
     -webkit-box-reflect: below -.1em linear-gradient(transparent 20%, rgba(0, 0, 0, 0.35));
