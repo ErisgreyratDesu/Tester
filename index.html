@@ -1,93 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Montserrat FONT-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/Logo_Trường_Đại_học_FPT.svg.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="figma.css">
+    <title>Figma Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel    ="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper_general">
-        <header>
-            <div class="logo">Kingdom</div>
-            <nav class="navigation">
-                <ul>
-                    <li>
-                        <a href="#" target="_blank" rel="noopener noreferrer" title="Home Page!">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" title="About me!">About</a>
-                    </li>
-                    <li class="wrapper_dropdown">
-                        <a href="#" title="My own project!">Project  <span><i class="fa-solid fa-arrow-up"></i></span></a>
-                        <ul class="dropdown">
-                            <a href="#">Project A</a>
-                            <a href="#">Project B</a>
-                            <a href="#">Project C</a>
-                            <a href="#">Project D</a>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" title="Blog">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="contact" title="Contact me!" onclick="contact()">
-                <i class="fa-solid fa-rainbow"></i>
-            </button>
-        </header>
-        <main>
-            <div class="wrapper_main">
-                    <h1><span class="wrapper_main_span_1">I'm,</span><span class="wrapper_main_span_2">Trung Thang</span></h1>
-                    <h2 class="wrapper_main_h2_1">はじめまして！</h2>
-                    <h2 class="wrapper_main_h2_2">I'm future Full-stack developer!</h2>
-                <div class="profile">
+    <div class="scroll_header_wrapper" title="Back to header">
+        <a class="scroll_wrapper" href="#headerBack">
+            <div class="scroll_header"><i class="fa-solid fa-arrow-up"></i></div>
+        </a>
+    </div>
+<div class="wrapper_general">
+    <div class="seaching_area">
+        <button class="cancel_btn" title="cancle" onclick="seachingacts()"><i class="fa-solid fa-x"></i></button>
+        <input type="text" placeholder="Enter here..." id="inputed_searching">
+        <div id="ouputOfS"></div>
+    </div>
+
+    <header>
+        <div class="wrapper_header">
+            <div class="imgwrapperne">
+                <img src="./person_background.png" alt="img"></div>
+            <nav>
+                <button class="menu" id="btn_menune" onclick="menu_function()"><i class="fa-solid fa-bars"></i></button>
+                <img src="./logo.png" class="logo" id="headerBack"></img>
+                <div class="wrapper_btn_header">
+                    <ul>
+                        <li class="btn_header btn2_h" onclick="beingFunction()">Course</li>
+                        <li class="btn_header btn1_h" onclick="beingFunction()">Home</li>
+                        <li class="btn_header btn3_h" onclick="beingFunction()">Instructors</li>
+                        <li class="btn_header btn4_h" onclick="beingFunction()">Schedules</li>
+                        <li class="btn_header btn5_h" onclick="beingFunction()">Contact Us</li>
+                    </ul>
                 </div>
-                <div class="wrapper_button"></div>
-                <button class="button button1" id="buttonM_hover">
-                    <span id="plane"><i class="fa-solid fa-plane"></i></span>
-                    <div class="cloud cloud1"><i class="fa-solid fa-cloud"></i></div>
-                    <div class="cloud cloud2"><i class="fa-solid fa-cloud"></i></div>
-                    <div class="cloud cloud3"><i class="fa-solid fa-cloud"></i></div>
-                    <span id="textPlane"><i class="fa-solid fa-gem"></i></span>
-                    <span id="textWelcome">Welcome</span>
-                </button>
-                <button class="button button2">Source</button>
-                <button class="button button3">Co-op</button>
+                <div class="wrapper_register">
+                    <div class="searching" id="seaching_btn" onclick="seachingacts()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="login" onclick="window.location.href='./login.html'">Login</div>
+                    <div class="register" onclick="window.location.href='./login.html'">Register</div>
+                    <div class="register mobile" onclick="window.location.href='login.html'"><i class="fa-solid fa-user"></i></div>
+                </div>
+            </nav>
+            <div class="wrapper_contents_header">
+                <h1 class="contents_header content1_h">A Classical Education <br>for the Future</h1>
+                <h2 class="contents_header content2_h">We prepare you to engage in the world that is and to help bring about a world that ought to be</h2>
+                <button class="btn_m_h" onclick="beingFunction()">Get Started</button>
             </div>
-        </main>
-        <footer>
-        <div class="footer">
-            <div class="footer_text">© 2025 UI Beginner's. All rights reserved.</div>
-            <div class="footer_horLine"></div>
-            <div class="footer_link">
-                <div class="footer_link_container">
-                    <div class="footer_btn" title="Facebook"> <i class="fa-brands fa-facebook"></i> </div>
-                    <div class="footer_btn" title="Github"> <i class="fa-brands fa-github"></i> </div>
-                    <div class="footer_btn" title="X-Twitter"> <i class="fa-brands fa-x-twitter"></i ></div>
-                    <div class="footer_btn" title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i></div>
-                    <div class="footer_btn" title="Instagram"> <i class="fa-brands fa-instagram"></i></div>
+            <div class="wrapper_subbar_header">
+                <div class="subbar_items item_h1" onclick="beingFunction()">
+                    <i class="fa-regular fa-comments"></i> chat</div>
+                <div class="subbar_items item_h2" onclick="beingFunction()">
+                    <i class="fa-brands fa-nfc-symbol"></i> Examination</div>
+                <div class="subbar_items item_h3" onclick="beingFunction()">
+                    <i class="fa-solid fa-user-group"></i> Competition</div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper_contents_main">
+            <div class="content_m_1">
+                <h1 class="main_header">Top cartegories</h1>
+                <div class="wrapper_main_cards">
+                    <button class="m_seeAll">See all</button>
+                    <div class="m_cards">
+                        <ul class="cards" onclick="beingFunction()">
+                            <div class="leftArrow"><i class="fa-solid fa-arrow-left"></i></div>
+                            <div class="rightArrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <li class="card card_1">
+                                <div class="img_card_main"><img src="./Marketing.png" alt="img"></div>
+                                <h2>Marketing</h2>
+                            </li>
+                            <li class="card card_2">
+                                <div class="img_card_main"><img src="./design.jpg" alt="img"></div>
+                                <h2>Design</h2>
+                            </li>
+                            <li class="card card_3">
+                                <div class="img_card_main"><img src="./programming.jpg" alt="img"></div>
+                                <h2>Programming</h2>
+                            </li>
+                            <li class="card card_4">
+                                <div class="img_card_main"><img src="./tech.jpg" alt="img"></div>
+                                <h2>Technology</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content_m_2">
+                <div class="wrapper_content2">
+                    <div class="wrapperimgcontent2">
+                        <div class="wrapper_circle">
+                            <div class="circleSmallerInside">
+                                <div class="wrapper_img_squareT">
+                                    <div class="imgTop"></div>
+                                    <div class="imgBottom"></div>
+                                </div>
+                                <div class="wrapper_img_squareB">
+                                    <div class="imgTop"></div>
+                                    <div class="imgBottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapperinstructorscontent2"></div>
+                    <div class="wrappertextcontent2">
+                        <div class="wrappertextcontent2_header">
+                            We are <span>Experts</span> Learning Institution
+                        </div>
+                        <div class="wrappertextcontent2_description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi,
+                             adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit 
+                        </div>
+                        <div class="wrappertextcontent2_btn">Enroll now</div>
+                    </div>
                 </div>
             </div>
         </div>
-        </footer>
-        <script>
-            const Plane = document.getElementById("plane");
-            const TextWelcome = document.getElementById("textWelcome");
-            const isHover = document.getElementById("buttonM_hover");
-            Plane.addEventListener("animationend", () => {
-                TextWelcome.classList.add("appeared");
-            });
-            isHover.addEventListener("mouseout",() => {
-                TextWelcome.classList.remove("appeared");
-            });
-        </script>
-    </div>
+        
+    </main>
+    <footer></footer>
+</div>
+    <script src="./figma.js"></script>
 </body>
 </html>
