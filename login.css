@@ -52,10 +52,12 @@ body {
     clip-path: circle(100px at center left);
     transform: translateX(0);
     transition: all 0.3s;
+    opacity:1;
 }
 .particle.active {
     transform: translateX(calc(100% + 125px));
     clip-path: circle(100px at center right);
+    opacity:0;
 }
 .wrapper_login_general  > .half_form > .btn_change_model{
     background-color:#FFFFFF;
